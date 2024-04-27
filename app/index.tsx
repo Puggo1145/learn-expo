@@ -1,20 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { Link } from 'expo-router';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Aora</Text>
+    <View className="w-full h-full flex items-center justify-center">
       <StatusBar style="auto" />
+      <Text className='text-3xl font-pblack'>Aora</Text>
+      <Link href="/profile" style={{ color: "blue" }}>
+        Go to profile
+      </Link>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

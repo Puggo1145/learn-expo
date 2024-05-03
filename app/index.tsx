@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, Text, View, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { router, Redirect } from 'expo-router';
+import { router } from 'expo-router';
 
 import { images } from '../constants';
 import CustomButton from 'components/CustomButton';
@@ -25,7 +25,7 @@ export default function App() {
           />
 
           <View className='relative mt-5'>
-            <Text className='text-3xl text-white font-bold text-center'>
+            <Text className='text-4xl text-white font-bold text-center'>
               Discover Endless Posibilities with{' '}
               <Text className='text-secondary-200'>
                 Aora
